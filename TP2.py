@@ -30,7 +30,7 @@ with st.container():
     st.write("---")
 
     st.subheader("CONSULTA 2 JUNÇÃO DE DUAS RELAÇÕES:")
-    st.write("TEMA: ORDEM DOS ESTADOS DO SUDESTE COM MAIOR AREA DE CADASTRO RURAL")
+    st.write("TEMA: ORDEM DOS ESTADOS COM MAIOR AREA DE CADASTRO RURAL")
     tabela4 = pd.read_csv("consulta4.csv")
     st.area_chart(tabela4, x="UF", y="Area", color="#DEB887")
     st.write("---")
