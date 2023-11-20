@@ -48,7 +48,7 @@ with st.container():
     st.write("---")
 
     st.subheader("CONSULTA 3 JUNÇÃO DE TRES OU MAIS RELAÇÕES:")
-    st.write("TEMA: #ESTADOS COM MAIOR AREA DE TERRENOS DE ESTRANGEIROS")
+    st.write("TEMA: ESTADOS COM MAIOR AREA DE TERRENOS DE ESTRANGEIROS")
     tabela7 = pd.read_csv("consulta8.csv")
     st.bar_chart(tabela7, x="UF", y="Area", color="#B0E0E6", width=0, height=0, use_container_width=True)
     st.write("---")
