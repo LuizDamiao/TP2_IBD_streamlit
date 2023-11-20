@@ -38,7 +38,7 @@ with st.container():
     st.subheader("CONSULTA 3 JUNÇÃO DE DUAS RELAÇÕES:")
     st.write("TEMA: OS 20 MENORES TERRENOS CADASTRADOS E SUA LOCALIZACAO")
     tabela5 = pd.read_csv("consulta5.csv")
-    st.bar_chart(tabela5, x="Percentual", y="Qtd", color="#D8BFD8", width=0, height=0, use_container_width=True)
+    st.bar_chart(tabela5, x="Percentual", y="QTD", color="#D8BFD8", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 2 JUNÇÃO DE TRES OU MAIS RELAÇÕES:")
