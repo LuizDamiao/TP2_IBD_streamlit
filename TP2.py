@@ -62,5 +62,5 @@ with st.container():
     st.subheader("CONSULTA 2 AGREGAÇÃO SOBRE JUNÇAO DE DUAS OU MAIS RELAÇÕES:")
     st.write("TEMA: ESTADOS COM MAIS TERRENOS DE ESTRANGEIROS")
     tabela8 = pd.read_csv("consulta10.csv")
-    st.bar_chart(tabela8, x="UF", y="Estrangeiros", color="#FFDAB9", width=0, height=0, use_container_width=True)
+    st.bar_chart(tabela8, x="UF", y="Estrangeiros", width=0, height=0, use_container_width=True)
     st.write("---")
