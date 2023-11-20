@@ -14,7 +14,7 @@ with st.container():
     st.subheader("CONSULTA 1 SELEÇÃO E PROJEÇÃO:")
     st.write("TEMA: OS 20 MAIORES TERRENOS CADASTRADOS E REGULARIZADOS EM REGISTRO")
     tabela1 = pd.read_csv("consulta1.csv")
-    st.area_chart(tabela1, x="Denominacao", y="Area", color="#FF6347")
+    st.bar_chart(tabela1, x="Denominacao", y="Area", color="#FF6347", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 2 SELEÇÃO E PROJEÇÃO:")
@@ -26,13 +26,13 @@ with st.container():
     st.subheader("CONSULTA 1 JUNÇÃO DE DUAS RELAÇÕES:")
     st.write("TEMA: AS 10 CIDADES COM A MAIOR AREA DE TERRENOS NÃO REGULARIZADOS EM REGISTRO")
     tabela3 = pd.read_csv("consulta3.csv")
-    st.area_chart(tabela3, x="Municipio", y="Area")
+    st.bar_chart(tabela3, x="Municipio", y="Area", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 2 JUNÇÃO DE DUAS RELAÇÕES:")
     st.write("TEMA: ORDEM DOS ESTADOS COM MAIOR AREA DE CADASTRO RURAL")
     tabela4 = pd.read_csv("consulta4.csv")
-    st.area_chart(tabela4, x="UF", y="Area", color="#DEB887")
+    st.bar_chart(tabela4, x="UF", y="Area", color="#DEB887", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 3 JUNÇÃO DE DUAS RELAÇÕES:")
@@ -44,7 +44,7 @@ with st.container():
     st.subheader("CONSULTA 2 JUNÇÃO DE TRES OU MAIS RELAÇÕES:")
     st.write("TEMA: OS 10 MAIORES TERRENOS PUBLICOS")
     tabela6 = pd.read_csv("consulta7.csv")
-    st.area_chart(tabela6, x="Denominacao", y="Area", color="#FFE4B5")
+    st.bar_chart(tabela6, x="Denominacao", y="Area", color="#FFE4B5", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 3 JUNÇÃO DE TRES OU MAIS RELAÇÕES:")
@@ -56,7 +56,7 @@ with st.container():
     st.subheader("CONSULTA 1 AGREGAÇÃO SOBRE JUNÇAO DE DUAS OU MAIS RELAÇÕES:")
     st.write("TEMA: ESTADOS QUE MAIS POSSUEM TERRENOS PUBLICOS")
     tabela7 = pd.read_csv("consulta9.csv")
-    st.area_chart(tabela7, x="UF", y="Qtd", color="#FAFAD2")
+    st.bar_chart(tabela7, x="UF", y="Qtd", color="#FAFAD2", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 2 AGREGAÇÃO SOBRE JUNÇAO DE DUAS OU MAIS RELAÇÕES:")
