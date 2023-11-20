@@ -56,7 +56,7 @@ with st.container():
     st.subheader("CONSULTA 1 AGREGAÇÃO SOBRE JUNÇAO DE DUAS OU MAIS RELAÇÕES:")
     st.write("TEMA: ESTADOS QUE MAIS POSSUEM TERRENOS PUBLICOS")
     tabela7 = pd.read_csv("consulta9.csv")
-    st.bar_chart(tabela7, x="UF", y="Qtd", color="#FAFAD2", width=0, height=0, use_container_width=True)
+    st.bar_chart(tabela7, x="UF", y="Qtd", color="#ffaa00", width=0, height=0, use_container_width=True)
     st.write("---")
 
     st.subheader("CONSULTA 2 AGREGAÇÃO SOBRE JUNÇAO DE DUAS OU MAIS RELAÇÕES:")
